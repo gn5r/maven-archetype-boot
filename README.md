@@ -47,7 +47,11 @@ Add configuration to install this package from GitHub Packages into `~/.m2/setti
 
 Execute next command
 
-`mvn archetype:generate -DarchetypeGroupId=com.github.gn5r -DarchetypeArtifactId=maven-archetype-boot -DarchetypeVersion=0.1.0-SNAPSHOT`
+```bash
+mvn archetype:generate -DarchetypeGroupId=com.github.gn5r\
+ -DarchetypeArtifactId=maven-archetype-boot\
+ -DarchetypeVersion=0.1.0-SNAPSHOT
+```
 
 If you are using Linux, you can use `scripts/run.sh`
 

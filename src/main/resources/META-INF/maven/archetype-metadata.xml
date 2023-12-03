@@ -6,8 +6,8 @@
   name="maven-archetype-boot">
 
   <requiredProperties>
-    <requiredProperty key="spring-boot-version">
-      <defaultValue>3.1.2</defaultValue>
+    <requiredProperty key="springBootVersion">
+      <defaultValue>3.2.0</defaultValue>
     </requiredProperty>
     <requiredProperty key="version">
       <defaultValue>1.0.0-SNAPSHOT</defaultValue>

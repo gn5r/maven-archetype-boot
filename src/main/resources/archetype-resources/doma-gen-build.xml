@@ -6,20 +6,24 @@
   <property name="dialectName" value="mysql" />
   <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
   <property name="url" value="jdbc:mysql://localhost:13306/dev" />
+  <property name="schemaName" value="dev" />
   <property name="user" value="dev" />
   <property name="password" value="dev" />
-  <property name="entityPackageName" value="com.gitlab.gn5r.uhbrhs.entity" />
-  <property name="daoPackageName" value="com.gitlab.gn5r.uhbrhs.repository" />
-  <property name="configClassName" value="com.gitlab.gn5r.uhbrhs.config.AppConfig" />
+  <property name="entityPackageName" value="${package}.entity" />
+  <property name="daoPackageName" value="${package}.repository" />
+  <property name="configClassName" value="${package}.config.doma.AppConfig" />
   <property name="sqlFilePattern" value="META-INF/**/*.sql" />
   <property name="templatePrimaryDir" value="src/main/resources/doma/template" />
   <property name="tableTypes" value="TABLE,VIEW" />
   <property name="tableNamePattern" value=".*" />
+  <property name="ignoredTableNamePattern" value=".*\$.*" />
   <property name="useAccessor" value="true" />
   <property name="namingType" value="snake_lower_case" />
   <property name="useListener" value="true" />
+  <property name="overwriteEntity" value="true" />
   <property name="overwriteListener" value="true" />
   <property name="overwriteDao" value="true" />
+  <property name="overwriteSql" value="true" />
 
   <path id="classpath">
     <fileset dir="lib" />
@@ -44,6 +48,7 @@
       password="${password}"
       tableTypes="${tableTypes}"
       tableNamePattern="${tableNamePattern}"
+      ignoredTableNamePattern="${ignoredTableNamePattern}"
       templatePrimaryDir="${templatePrimaryDir}">
       <entityConfig
         destdir="${javaDestDir}"
@@ -51,6 +56,7 @@
         namingType="${namingType}"
         useAccessor="${useAccessor}"
         useListener="${useListener}"
+        overwrite="${overwriteEntity}"
         overwriteListener="${overwriteListener}"
       />
       <daoConfig
@@ -61,6 +67,7 @@
       />
       <sqlConfig
         destdir="${sqlDestDir}"
+        overwrite="${overwriteSql}"
       />
     </gen>
   </target>

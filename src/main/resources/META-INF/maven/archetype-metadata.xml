@@ -7,7 +7,7 @@
 
   <requiredProperties>
     <requiredProperty key="springBootVersion">
-      <defaultValue>3.2.0</defaultValue>
+      <defaultValue>3.2.2</defaultValue>
     </requiredProperty>
     <requiredProperty key="version">
       <defaultValue>1.0.0-SNAPSHOT</defaultValue>

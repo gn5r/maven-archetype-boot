@@ -6,7 +6,7 @@
 
   <groupId>com.github.gn5r</groupId>
   <artifactId>maven-archetype-boot</artifactId>
-  <version>0.2.0</version>
+  <version>0.2.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <distributionManagement>

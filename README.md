@@ -50,7 +50,7 @@ Execute next command
 ```bash
 mvn archetype:generate -DarchetypeGroupId=com.github.gn5r\
  -DarchetypeArtifactId=maven-archetype-boot\
- -DarchetypeVersion=0.2.0
+ -DarchetypeVersion=0.2.1-SNAPSHOT
 ```
 
 If you are using Linux, you can use `scripts/run.sh`

@@ -4,7 +4,7 @@ set -e
 
 ARCHETYPE_GROUP_ID=com.github.gn5r
 ARCHETYPE_ARTIFACT_ID=maven-archetype-boot
-ARCHETYPE_VERSION=0.2.0
+ARCHETYPE_VERSION=0.2.1-SNAPSHOT
 
 if [ -n "$1" ]; then
   if [ ! -d "$1" ]; then

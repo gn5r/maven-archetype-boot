@@ -10,10 +10,6 @@ package ${packageName};
 <#list importNames as importName>
 import ${importName};
 </#list>
-<#--  エンティティの変数にjava.langの数値型を含む場合はBigDecimalをインポートする  -->
-<#if lib.hasNumeric(entityDesc.ownEntityPropertyDescs)>
-import java.math.BigDecimal;
-</#if>
 
 <#-- ConfigAutowireableをインポートする -->
 import org.seasar.doma.boot.ConfigAutowireable;
@@ -22,7 +18,7 @@ import org.seasar.doma.boot.ConfigAutowireable;
 <#if entityDesc.showDbComment && entityDesc.comment??>
  * ${entityDesc.comment}のDaoインターフェイス
 </#if>
- * 
+ *
 <#if lib.author??>
  * @author ${lib.author}
 </#if>

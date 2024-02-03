@@ -15,16 +15,12 @@ package ${packageName};
 import ${lib.convertImportType(importName)};
 </#if>
 </#list>
-<#--  変数にjava.langの数値型を含む場合はBigDecimalをインポートする  -->
-<#if lib.hasNumeric(ownEntityPropertyDescs)>
-import java.math.BigDecimal;
-</#if>
 
 /**
 <#if showDbComment && comment??>
  * ${comment}のエンティティクラス
 </#if>
- * 
+ *
 <#if lib.author??>
  * @author ${lib.author}
 </#if>
